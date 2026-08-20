@@ -1,0 +1,26 @@
+{
+  "name": "my-web-course",
+  "version": "1.0.0",
+  "description": "meine Hausaufgabe WEB Kurs",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "format": "prettier --write .",
+    "format:check": "prettier --check ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cleryk89/my-web-course.git"
+  },
+  "keywords": [],
+  "author": "Cleryk",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/cleryk89/my-web-course/issues"
+  },
+  "homepage": "https://github.com/cleryk89/my-web-course#readme",
+  "devDependencies": {
+    "prettier": "^3.9.6"
+  }
+}
