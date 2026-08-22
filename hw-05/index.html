@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="uk">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Meine BessereFilms </title>
+</head>
+
+<body>
+  <header>
+    <p>BessereFilms und personlishe Wiki</p>
+    <nav>
+      <a href="#hero">Hero</a>
+      <a href=""></a>
+      <a href=""></a>
+      <a href=""></a>
+      <a href=""></a>
+    </nav>
+
+  </header>
+
+  <main>
+    <section id="hero">
+      <h1>Hero</h1>
+      <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iusto quisquam inventore tempora quibusdam est sunt
+        necessitatibus tenetur omnis velit expedita. In amet suscipit iusto voluptatem temporibus consequuntur eaque
+        harum atque?</p>
+      <img src="img/films.jpeg" alt="Logo meine Blog">
+    </section>
+
+    <section>
+      <h2>Uber meine Projekt</h2>
+      <ul>
+        <li>створюй і зберігай списки улюблених фільмів з посіланнями</li>
+        <li>створюй і зберігай списки улюблених серіалів з посіланнями</li>
+        <li>Розроби свій віікі з корисною інформацією і різмини розділами</li>
+        <li>Створити і розробити персональний календар з плануванням часу і синхронізацією гугл календарю</li>
+        <li>Створити персональний туду лист з нагадуванням, синхронізацією з каалендарем, списком справ і їх виконанням
+        </li>
+        <li>Розробити мобільний застасунок який буде синхронізуватися з сайтом</li>
+        <li>Перевести все не безкоштовний хостинг з авторизаією захистом данних, розробити все на Реакт плюс Тайп скрипт
+        </li>
+      </ul>
+
+      <ol>
+        <li>Пройти весь курс і зробити нотатки</li>
+        <li>Перевести все на свій сайт і дороблювати його</li>
+        <li>Займатися щодня 5 годин программування і 4 години німецька</li>
+        <li>Підготувати і перенести всі старі проєкти в окремий роздл на сайті як портфоліо</li>
+      </ol>
+    </section>
+
+    <section>
+      <table>
+        <caption>Таблиця можливостей і відстежування виконаного</caption>
+        <thead>
+          <th colspan="2">Розділ №1</th>
+          <th>Розділ №2</th>
+          <th>Розділ №3</th>
+          <th>Розділ №4</th>
+          <th>Розділ №5</th>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Інформаццію буде потім</td>
+            <td>Інформаццію буде потім</td>
+            <td>Інформаццію буде потім</td>
+            <td>Інформаццію буде потім</td>
+            <td>Інформаццію буде потім</td>
+          </tr>
+          <tr>
+            <td>Інформаццію буде потім</td>
+            <td rowspan="2">Інформаццію буде потім</td>
+            <td>Інформаццію буде потім</td>
+            <td>Інформаццію буде потім</td>
+            <td>Інформаццію буде потім</td>
+          </tr>
+          <tr>
+            <td>Інформаццію буде потім</td>
+            <td>Інформаццію буде потім</td>
+            <td>Інформаццію буде потім</td>
+            <td>Інформаццію буде потім</td>
+            <td>Інформаццію буде потім</td>
+          </tr>
+          <tr>
+            <td>Інформаццію буде потім</td>
+            <td>Інформаццію буде потім</td>
+            <td>Інформаццію буде потім</td>
+            <td>Інформаццію буде потім</td>
+            <td>Інформаццію буде потім</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section>
+      <h2>Форма регістрації</h2>
+
+      <form action="/register" method="post">
+        <p>
+          <label for="name">Name:</label>
+          <input type="text" id="name" name="name" required placeholder="Olena Petrenko">
+        </p>
+
+        <p>
+          <label for="email">E-Mail:</label>
+          <input type="email" name="email" id="email" required placeholder="olena@example.com">
+        </p>
+
+        <p>
+          <label for="tel">Phone Nummer</label>
+          <input type="tel" name="tel" id="tel" placeholder="+4912345678910">
+        </p>
+
+        <p>
+          <label for="dostup">Доступ до розділів</label>
+          <select name="dostup" id="dostup" required>
+            <option value="">-- Wahlen --</option>
+            <option value="video">Films und Serials</option>
+            <option value="wiki">Wiki</option>
+            <option value="portfolio">Portfolio</option>
+            <option value="alles">Alles</option>
+          </select>
+        </p>
+
+        <p>Format Nachrichten</p>
+        <label>
+          <input type="radio" name="nachricht" value="email" required>E-mail
+        </label>
+        <label>
+          <input type="radio" name="nachricht" value="telegram">Telegram
+        </label>
+
+        <p>
+          <label>
+            <input type="checkbox" name="agree" required>Ich bin zustimmen
+          </label>
+        </p>
+
+        <p>
+          <label for="comment">Komentar</label><br>
+          <textarea name="comment" id="comment" rows="3" placeholder="Rozkaju pro sebe"></textarea>
+        </p>
+
+        <div>
+          <button type="submit">Anmelden</button>
+          <button type="reset">Reser</button>
+        </div>
+
+
+      </form>
+    </section>
+
+  </main>
+
+  <footer>
+
+    <p>&copy; 2026 Tech Blog</p>
+    <address>
+      <a href="mailto:hello@techblog.com">hello@techblog.com</a>
+    </address>
+    <div>
+      <a href="#">Telegram</a>
+      <a href="#">Instagramm</a>
+      <a href="#">LinkedIn</a>
+    </div>
+  </footer>
+
+</body>
+
+</html>
