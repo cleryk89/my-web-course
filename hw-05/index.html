@@ -4,33 +4,34 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Meine BessereFilms </title>
+  <title>Мій персональний проект</title>
 </head>
 
 <body>
   <header>
     <p>BessereFilms und personlishe Wiki</p>
     <nav>
-      <a href="#hero">Hero</a>
-      <a href=""></a>
-      <a href=""></a>
-      <a href=""></a>
-      <a href=""></a>
+      <a href="#hero">Персональний довідник</a>
+      <a href="#project">Про мій проект</a>
+      <a href="#table-ntf">Таблиця можливостей і відстежування виконаного</a>
+      <a href="#registration">Реєстрація</a>
+      <a href="#faq">FAQ</a>
+      <a href="#contact">Мої контакти</a>
     </nav>
 
   </header>
 
   <main>
     <section id="hero">
-      <h1>Hero</h1>
+      <h1>Персональний довідник</h1>
       <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iusto quisquam inventore tempora quibusdam est sunt
         necessitatibus tenetur omnis velit expedita. In amet suscipit iusto voluptatem temporibus consequuntur eaque
         harum atque?</p>
-      <img src="img/films.jpeg" alt="Logo meine Blog">
+      <img src="img/logo.jpg" alt="Logo meine Blog" width="300" height="300">
     </section>
 
-    <section>
-      <h2>Uber meine Projekt</h2>
+    <section id="project">
+      <h2>Про мій проект</h2>
       <ul>
         <li>створюй і зберігай списки улюблених фільмів з посіланнями</li>
         <li>створюй і зберігай списки улюблених серіалів з посіланнями</li>
@@ -51,15 +52,16 @@
       </ol>
     </section>
 
-    <section>
+    <section id="table-ntf">
+      <h2>Таблиця назву і контент будуть потім</h2>
       <table>
         <caption>Таблиця можливостей і відстежування виконаного</caption>
         <thead>
-          <th colspan="2">Розділ №1</th>
-          <th>Розділ №2</th>
-          <th>Розділ №3</th>
-          <th>Розділ №4</th>
-          <th>Розділ №5</th>
+          <tr>
+            <th scope="col" colspan="2">Розділ №1</th>
+            <th>Розділ №2</th>
+            <th>Розділ №3</th>
+          </tr>
         </thead>
         <tbody>
           <tr>
@@ -70,9 +72,7 @@
             <td>Інформаццію буде потім</td>
           </tr>
           <tr>
-            <td>Інформаццію буде потім</td>
-            <td rowspan="2">Інформаццію буде потім</td>
-            <td>Інформаццію буде потім</td>
+            <th scope="rowgroup" rowspan="2">Інформаццію буде потім</th>
             <td>Інформаццію буде потім</td>
             <td>Інформаццію буде потім</td>
           </tr>
@@ -94,12 +94,12 @@
       </table>
     </section>
 
-    <section>
+    <section id="registration">
       <h2>Форма регістрації</h2>
 
       <form action="/register" method="post">
         <p>
-          <label for="name">Name:</label>
+          <label for="name">Ім'я</label>
           <input type="text" id="name" name="name" required placeholder="Olena Petrenko">
         </p>
 
@@ -109,58 +109,76 @@
         </p>
 
         <p>
-          <label for="tel">Phone Nummer</label>
+          <label for="tel">Номер телефону</label>
           <input type="tel" name="tel" id="tel" placeholder="+4912345678910">
         </p>
 
         <p>
           <label for="dostup">Доступ до розділів</label>
           <select name="dostup" id="dostup" required>
-            <option value="">-- Wahlen --</option>
-            <option value="video">Films und Serials</option>
-            <option value="wiki">Wiki</option>
-            <option value="portfolio">Portfolio</option>
-            <option value="alles">Alles</option>
+            <option value="">-- Вибрати --</option>
+            <option value="video">Фільми і серіали</option>
+            <option value="wiki">Персональне Wiki</option>
+            <option value="portfolio">Портфоліо</option>
+            <option value="alles">Все</option>
           </select>
         </p>
 
-        <p>Format Nachrichten</p>
-        <label>
-          <input type="radio" name="nachricht" value="email" required>E-mail
-        </label>
-        <label>
-          <input type="radio" name="nachricht" value="telegram">Telegram
-        </label>
+        <p>Формат повідомлень</p>
+        <label for="email">E-mail</label>
+        <input type="radio" id="email" name="nachricht" value="email" required>
+
+        <label for="telegram">Telegram</label>
+        <input type="radio" id="telegram" name="nachricht" value="telegram">
+
 
         <p>
-          <label>
-            <input type="checkbox" name="agree" required>Ich bin zustimmen
-          </label>
+          <label for="agree">Я згоден</label>
+          <input type="checkbox" id="agree" name="agree" required>
         </p>
 
         <p>
-          <label for="comment">Komentar</label><br>
-          <textarea name="comment" id="comment" rows="3" placeholder="Rozkaju pro sebe"></textarea>
+          <label for="comment">Про себе</label><br>
+          <textarea name="comment" id="comment" rows="3" placeholder="Розкажіть про себе"></textarea>
         </p>
 
         <div>
-          <button type="submit">Anmelden</button>
-          <button type="reset">Reser</button>
+          <button type="submit">Зареєструватися</button>
+          <button type="reset">Скинути</button>
         </div>
 
 
       </form>
     </section>
 
+    <section id="faq">
+      <h2>FAQ</h2>
+      <details>
+        <summary>Для кого цей проект ?</summary>
+        <p>Це персональна розробка для персонального використання і наповнення контентом</p>
+      </details>
+
+      <details>
+        <summary>Що буде виконано ?</summary>
+        <p>персональний проект з захистом, доступом на різних платформах</p>
+      </details>
+
+      <details>
+        <summary>Маєте побажання або рекомендіції ?</summary>
+        <p>Надсилайте Ваші пропозиції на пошту</p>
+      </details>
+
+    </section>
+
   </main>
 
   <footer>
 
-    <p>&copy; 2026 Tech Blog</p>
+    <p>&copy; 2026 ClerykUA</p>
     <address>
-      <a href="mailto:hello@techblog.com">hello@techblog.com</a>
+      <a href="mailto:cleryk89@gmail.com">cleryk89@gmail.com</a>
     </address>
-    <div>
+    <div id="contact">
       <a href="#">Telegram</a>
       <a href="#">Instagramm</a>
       <a href="#">LinkedIn</a>
