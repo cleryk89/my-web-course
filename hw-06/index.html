@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="uk">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Мій проект</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <header>
+    <h1>Мій персональний проект</h1>
+    <nav>
+      <a href="#hero">Персональний довідник</a>
+      <a href="#project">Про мій проект</a>
+      <a href="#table-ntf">Таблиця можливостей і відстежування виконаного</a>
+      <a href="#registration">Реєстрація</a>
+      <a href="#faq">FAQ</a>
+      <a href="#contact">Мої контакти</a>
+    </nav>
+  </header>
+
+  <main>
+    <section id="hero">
+      <h2>Персональний довідник</h2>
+      <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iusto quisquam inventore tempora quibusdam est sunt
+        necessitatibus tenetur omnis velit expedita. In amet suscipit iusto voluptatem temporibus consequuntur eaque
+        harum atque?</p>
+      <img src="img/logo.jpg" alt="Logo meine Blog" width="300" height="300">
+    </section>
+
+    <section id="project">
+      <h2>Про мій проект</h2>
+      <ul>
+        <li>створюй і зберігай списки улюблених фільмів з посіланнями</li>
+        <li>створюй і зберігай списки улюблених серіалів з посіланнями</li>
+        <li>Розроби свій віікі з корисною інформацією і різмини розділами</li>
+        <li>Створити і розробити персональний календар з плануванням часу і синхронізацією гугл календарю</li>
+        <li>Створити персональний туду лист з нагадуванням, синхронізацією з каалендарем, списком справ і їх виконанням
+        </li>
+        <li>Розробити мобільний застасунок який буде синхронізуватися з сайтом</li>
+        <li>Перевести все не безкоштовний хостинг з авторизаією захистом данних, розробити все на Реакт плюс Тайп скрипт
+        </li>
+      </ul>
+
+      <ol>
+        <li>Пройти весь курс і зробити нотатки</li>
+        <li>Перевести все на свій сайт і дороблювати його</li>
+        <li>Займатися щодня 5 годин программування і 4 години німецька</li>
+        <li>Підготувати і перенести всі старі проєкти в окремий роздл на сайті як портфоліо</li>
+      </ol>
+    </section>
+
+    <section id="table-ntf">
+      <h2>Таблиця назву і контент будуть потім</h2>
+      <table>
+        <caption>Таблиця можливостей і відстежування виконаного</caption>
+        <thead>
+          <tr>
+            <th scope="col" colspan="2">Розділ №1</th>
+            <th>Розділ №2</th>
+            <th>Розділ №3</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Інформаццію буде потім</td>
+            <td>Інформаццію буде потім</td>
+            <td>Інформаццію буде потім</td>
+            <td>Інформаццію буде потім</td>
+            <td>Інформаццію буде потім</td>
+          </tr>
+          <tr>
+            <th scope="rowgroup" rowspan="2">Інформаццію буде потім</th>
+            <td>Інформаццію буде потім</td>
+            <td>Інформаццію буде потім</td>
+          </tr>
+          <tr>
+            <td>Інформаццію буде потім</td>
+            <td>Інформаццію буде потім</td>
+            <td>Інформаццію буде потім</td>
+            <td>Інформаццію буде потім</td>
+            <td>Інформаццію буде потім</td>
+          </tr>
+          <tr>
+            <td>Інформаццію буде потім</td>
+            <td>Інформаццію буде потім</td>
+            <td>Інформаццію буде потім</td>
+            <td>Інформаццію буде потім</td>
+            <td>Інформаццію буде потім</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section id="registration">
+      <h2>Форма регістрації</h2>
+
+      <form action="/register" method="post">
+        <p>
+          <label for="name">Ім'я</label>
+          <input type="text" id="name" name="name" required placeholder="Olena Petrenko">
+        </p>
+
+        <p>
+          <label for="email">E-Mail:</label>
+          <input type="email" name="email" id="email" required placeholder="olena@example.com">
+        </p>
+
+        <p>
+          <label for="tel">Номер телефону</label>
+          <input type="tel" name="tel" id="tel" placeholder="+4912345678910">
+        </p>
+
+        <p>
+          <label for="dostup">Доступ до розділів</label>
+          <select name="dostup" id="dostup" required>
+            <option value="">-- Вибрати --</option>
+            <option value="video">Фільми і серіали</option>
+            <option value="wiki">Персональне Wiki</option>
+            <option value="portfolio">Портфоліо</option>
+            <option value="alles">Все</option>
+          </select>
+        </p>
+
+        <p>Формат повідомлень</p>
+        <label for="email">E-mail</label>
+        <input type="radio" id="email" name="nachricht" value="email" required>
+
+        <label for="telegram">Telegram</label>
+        <input type="radio" id="telegram" name="nachricht" value="telegram">
+
+
+        <p>
+          <label for="agree">Я згоден</label>
+          <input type="checkbox" id="agree" name="agree" required>
+        </p>
+
+        <p>
+          <label for="comment">Про себе</label><br>
+          <textarea name="comment" id="comment" rows="3" placeholder="Розкажіть про себе"></textarea>
+        </p>
+
+        <div>
+          <button type="submit">Зареєструватися</button>
+          <button type="reset">Скинути</button>
+        </div>
+
+
+      </form>
+    </section>
+
+    <section id="faq">
+      <h2>FAQ</h2>
+      <details>
+        <summary>Для кого цей проект ?</summary>
+        <p>Це персональна розробка для персонального використання і наповнення контентом</p>
+      </details>
+
+      <details>
+        <summary>Що буде виконано ?</summary>
+        <p>персональний проект з захистом, доступом на різних платформах</p>
+      </details>
+
+      <details>
+        <summary>Маєте побажання або рекомендіції ?</summary>
+        <p>Надсилайте Ваші пропозиції на пошту</p>
+      </details>
+
+    </section>
+
+  </main>
+
+  <footer>
+
+    <p>&copy; 2026 ClerykUA</p>
+    <address>
+      <a href="mailto:cleryk89@gmail.com">cleryk89@gmail.com</a>
+    </address>
+    <div id="contact">
+      <a href="#">Telegram</a>
+      <a href="#">Instagramm</a>
+      <a href="#">LinkedIn</a>
+    </div>
+  </footer>
+
+</body>
+
+</html>
