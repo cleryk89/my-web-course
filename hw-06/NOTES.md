@@ -2,7 +2,7 @@
 
 Дата: 2026-08-30
 
-Огляд виконаний за промптом `frontend-review.md` — перевірено `index.html` і `style.css`.
+Огляд виконаний за промптом [HomeWork/Promt/copilot/frontend-review.md](HomeWork/Promt/copilot/frontend-review.md) — перевірено `index.html` і `style.css`.
 
 Основні знахідки (за пріоритетом)
 

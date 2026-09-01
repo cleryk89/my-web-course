@@ -2,12 +2,12 @@
 
 Дата: 
 
-Огляд виконаний за промптом `frontend-review.md`.
+Огляд виконаний за промптом [HomeWork/Promt/copilot/frontend-review.md](HomeWork/Promt/copilot/frontend-review.md).
 
 Коротко:
 - `SUMMARY:`
 
-Проблеми та рекомендації (використовувати формат з `frontend-review.md`):
+Проблеми та рекомендації (використовувати формат з [HomeWork/Promt/copilot/frontend-review.md](HomeWork/Promt/copilot/frontend-review.md)):
 
 
 ---
