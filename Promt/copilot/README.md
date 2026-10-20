@@ -11,10 +11,12 @@ Usage
 Conventions
 
 - `HomeWork/Promt/copilot/frontend-review.md` — canonical Frontend Mentor / Code Reviewer prompt.
-- Each homework folder should contain two files after a review:
-  - `notes.md` — short checklist summary (from `REVIEW_TEMPLATE.md`).
-  - `frontend-review-notes.md` — detailed review following `HomeWork/Promt/copilot/frontend-review.md`.
+- Each `HomeWork/hw-*` folder stores review materials under `Überprüfung/`:
+  - `Überprüfung/REVIEW_TEMPLATE.md` — review criteria and homework-specific requirements.
+  - `Überprüfung/copilot/NOTES.md` — short checklist result from the Copilot review.
+  - `Überprüfung/copilot/frontend-review-notes.md` — detailed Copilot analysis.
+  - `Überprüfung/codex/visual-review-notes.md` — visual review result from the Codex prompt.
 
 Migration note
 
-I've moved the canonical `frontend-review.md` into this folder and updated references in the workspace. Going forward, all Copilot prompt files will be stored here and executed from this directory.
+All Copilot prompts live here. Codex prompts and visual review instructions live in `HomeWork/Promt/codex/`.

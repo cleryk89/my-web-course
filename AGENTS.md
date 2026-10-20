@@ -9,14 +9,16 @@ Quick repository summary
 
 What an agent should know and do
 - Link, don't embed: prefer linking to existing docs (e.g., README, hw/*/README.md).
-- Inspect `hw-*/REVIEW_TEMPLATE.md` and `hw-*/NOTES.md` for submission expectations.
+- Inspect `hw-*/Überprüfung/REVIEW_TEMPLATE.md` and the appropriate reviewer output folder for review expectations.
 - Avoid making broad refactors across student homework without asking the user first.
 - For local preview use a simple HTTP server, e.g.: `python -m http.server 8000` from the repo root.
 
 Key files and directories
 - [README.md](README.md) — repo overview
-- `hw-*/` — each homework lives here; check its `README.md`, `NOTES.md`, and `REVIEW_TEMPLATE.md`.
-- [hw-06/REVIEW_TEMPLATE.md](hw-06/REVIEW_TEMPLATE.md) — example review template currently open in the editor.
+- `hw-*/` — each homework lives here; check its `README.md` and `Überprüfung/` folder.
+- `hw-*/Überprüfung/REVIEW_TEMPLATE.md` — criteria shared by reviewers.
+- `hw-*/Überprüfung/copilot/` — short and detailed Copilot review outputs.
+- `hw-*/Überprüfung/codex/` — Codex visual review output.
 
 Conventions and expectations
 - Keep edits minimal and focused to the user's request.
